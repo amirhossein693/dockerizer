@@ -1,0 +1,10 @@
+version: "3.1"
+
+services:
+  azki_friday_front:
+    image: azki_friday_front:latest
+    build: .
+    container_name: azki_friday_front
+    restart: always
+    ports:
+      - "3000:3000"
